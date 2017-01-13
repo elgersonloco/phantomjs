@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class InstantorController {
-    @RequestMapping(value = "/test", method = RequestMethod.GET)
+    @RequestMapping(value = "/login", method = RequestMethod.GET)
     public String testInstantor(Model model, String error, String logout){
         if (error != null)
             model.addAttribute("error", "Your username and password is invalid.");
@@ -20,5 +20,15 @@ public class InstantorController {
             model.addAttribute("message", "You have been logged out successfully.");
 
         return "login";
+    }
+
+    @RequestMapping(value = {"/", "/welcome"}, method = RequestMethod.GET)
+    public String welcome(Model model) {
+        return "welcome";
+    }
+
+    @RequestMapping(value = "/inicio", method = RequestMethod.GET)
+    public  String inicio (){
+        return "inicio";
     }
 }
