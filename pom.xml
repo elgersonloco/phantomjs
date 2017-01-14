@@ -4,7 +4,7 @@
     <groupId>com.banregio</groupId>
     <artifactId>instantor</artifactId>
     <packaging>war</packaging>
-    <version>2.0</version>
+    <version>1.0</version>
     <name>Instantor POC</name>
     <url>http://maven.apache.org</url>
     <properties>

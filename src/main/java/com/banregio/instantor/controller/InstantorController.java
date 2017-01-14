@@ -6,13 +6,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
- * Created by VICTOR VALDEZ [gerson] on 13/01/17.
+ * Created by VICTOR VALDEZ [VICTOR VALDEZ [VICTOR VALDEZ [gerson]]] on 13/01/17.
  */
 
 @Controller
 public class InstantorController {
     @RequestMapping(value = "/login", method = RequestMethod.GET)
-    public String testInstantor(Model model, String error, String logout){
+    public String testInstantor(Model model, String error, String logout) {
         if (error != null)
             model.addAttribute("error", "Your username and password is invalid.");
 
@@ -28,7 +28,7 @@ public class InstantorController {
     }
 
     @RequestMapping(value = "/inicio", method = RequestMethod.GET)
-    public  String inicio (){
+    public String inicio() {
         return "inicio";
     }
 }
